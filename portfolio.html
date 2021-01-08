@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Portfolio</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<header>
+	<div class="container">
+		<div id="branding">
+			<h1>Food Hunter</h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html" target="_blank"> Home </a></li>
+				<li class="current"><a href="portfolio.html" target="_blank"> Portfolio </a></li>
+				<li><a href="about.html" target="_blank"> About </a></li>
+				<li><a href="contact.html" target="_blank"> Contact </a></li>
+				<li><a href="blog.html" target="_blank"> Blog </a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="image/object-fit2.jpg" style="width:90%">
+  <img class="mySlides" src="image/back.jpg" style="width:90%">
+  <img class="mySlides" src="image/gal.jpg" style="width:90%">
+  <img class="mySlides" src="image/le.jpg" style="width: 90%">
+  <img class="mySlides" src="image/bg.jpg" style="width: 90%">
+  <img class="mySlides" src="image/t.jpg" style="width: 90%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="gallery">
+	<a href="image/foodo.jpg" target="_blank">
+		<img src="image/foodo.jpg" alt="foodo" width="600" height="400">
+	</a>	
+</div>
+
+<div class="gallery">
+	<a href="image/four.jpg" target="_blank">
+		<img src="image/four.jpg" alt="four" width="600" height="400">
+	</a>
+</div>
+
+
+<div class="gallery">
+	<a href="image/sev.jpg" target="_blank">
+		<img src="image/sev.jpg" alt="sev" width="600" height="400">
+	</a>
+</div>
+
+<div class="gallery">
+	<a href="image/one.jpg" target="_blank">
+		<img src="image/one.jpg" alt="one" width="600" height="400">
+	</a>
+</div>
+
+<div class="gallery">
+	<a href="image/two.jpg" target="_blank">
+		<img src="image/two.jpg" alt="two" width="600" height="400">
+	</a>
+</div>
+
+
+<div class="gallery">
+	<a href="image/three.jpg" target="_blank">
+		<img src="image/three.jpg" alt="three" width="600" height="400">
+	</a>
+</div>
+
+
+<div class="gallery">
+	<a href="image/ei.jpg" target="_blank">
+		<img src="image/ei.jpg" alt="ei" width="400" height="300">
+	</a>
+</div>
+
+<div class="gallery">
+	<a href="image/food.jpg" target="_blank">
+		<img src="image/food.jpg" alt="food" width="700" height="500">
+	</a>
+</div>
+</body>
+</html>
